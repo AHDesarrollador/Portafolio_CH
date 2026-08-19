@@ -1,0 +1,119 @@
+.hero {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 150px 32px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 1400px;
+}
+
+.hero-lanyard {
+  width: 4px;
+  height: 64px;
+  background: linear-gradient(var(--base-dark), var(--base));
+  border-radius: var(--r-full);
+  margin-bottom: -6px;
+}
+
+.hero-card {
+  position: relative;
+  width: min(560px, 100%);
+  border-radius: var(--r-xl);
+  padding: 56px 44px 44px;
+  text-align: center;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.hero-punch {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46px;
+  height: 12px;
+  border-radius: var(--r-full);
+  background: var(--base);
+  box-shadow:
+    inset 3px 3px 6px var(--base-dark),
+    inset -3px -3px 6px var(--base-light);
+}
+
+.hero-photo-frame {
+  position: relative;
+  width: 148px;
+  height: 148px;
+  border-radius: 50%;
+  margin: 12px auto 28px;
+  overflow: hidden;
+}
+
+.hero-photo {
+  position: absolute;
+  inset: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero-eyebrow {
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: clamp(1.7rem, 4vw, 2.35rem);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-loc {
+  color: var(--ink-muted);
+  font-weight: 600;
+  font-size: 0.98rem;
+  margin-bottom: 20px;
+}
+
+.hero-loc .dot {
+  color: var(--coral);
+}
+
+.hero-bio {
+  color: var(--ink-muted);
+  max-width: 420px;
+  margin: 0 auto 32px;
+  font-size: 0.98rem;
+}
+
+.hero-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.hero-cta-primary {
+  color: var(--coral-dark);
+}
+
+.hero-cta-secondary {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink-muted);
+  transition: color 0.2s ease;
+}
+
+.hero-cta-secondary:hover {
+  color: var(--teal-dark);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 130px 20px 72px;
+  }
+  .hero-card {
+    padding: 48px 26px 36px;
+  }
+}

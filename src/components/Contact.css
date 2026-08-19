@@ -1,0 +1,105 @@
+.contact-card {
+  border-radius: var(--r-lg);
+  padding: 0 0 30px;
+  max-width: 640px;
+  overflow: hidden;
+}
+
+.contact-stripe {
+  height: 46px;
+  background: repeating-linear-gradient(
+    100deg,
+    var(--ink) 0px,
+    var(--ink) 3px,
+    #34434f 3px,
+    #34434f 6px
+  );
+  margin-bottom: 28px;
+}
+
+.contact-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 0 30px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-bottom: 18px;
+  border-bottom: 1px dashed var(--base-dark);
+}
+
+.contact-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.contact-row-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-row-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.contact-row-value {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.contact-row-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-copy {
+  font-size: 0.82rem;
+  padding: 0.6em 1.1em;
+  color: var(--ink-muted);
+}
+
+.contact-action {
+  font-size: 0.82rem;
+  padding: 0.6em 1.2em;
+  color: var(--coral-dark);
+}
+
+.contact-barcode {
+  margin: 26px 30px 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 30px;
+  opacity: 0.6;
+}
+
+.contact-barcode span {
+  display: inline-block;
+  height: 100%;
+  background: var(--ink);
+  border-radius: 1px;
+}
+
+@media (max-width: 520px) {
+  .contact-row {
+    align-items: flex-start;
+  }
+  .contact-row-actions {
+    width: 100%;
+  }
+  .contact-action, .contact-copy {
+    flex: 1;
+    text-align: center;
+  }
+}

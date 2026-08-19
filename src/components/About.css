@@ -1,0 +1,40 @@
+.about-text {
+  max-width: 640px;
+  color: var(--ink-muted);
+  font-size: 1.02rem;
+  margin-bottom: 48px;
+}
+
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.about-fact {
+  padding: 20px 22px;
+  border-radius: var(--r-md);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.about-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.about-fact-value {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+@media (max-width: 860px) {
+  .about-facts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
