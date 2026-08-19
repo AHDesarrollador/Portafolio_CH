@@ -20,8 +20,7 @@ export default function About() {
 
       <Reveal delay={0.1}>
         <p className="about-text">
-          Soy Ingeniero en Sistemas Computacionales egresado del Instituto Tecnológico Nacional de
-          México, campus Acapulco. Mi camino combina desarrollo frontend con soporte técnico
+          Mi camino combina desarrollo frontend con soporte técnico
           especializado en equipos de impresión, dos mundos que me enseñaron tanto a construir
           interfaces cuidadas como a diagnosticar problemas con paciencia y método. Hoy me enfoco en
           crear experiencias web fluidas usando React, animaciones con GSAP y scroll suave con Lenis.

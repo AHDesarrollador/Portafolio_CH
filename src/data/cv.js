@@ -11,7 +11,7 @@ export const profile = {
   email: "ariel.hc8@outlook.com",
   badgeId: "ID · FRONTEND",
   bio:
-    "Ingeniero en Sistemas Computacionales enfocado en construir interfaces claras, rápidas y responsivas con React. Combino experiencia en desarrollo web con una base sólida en soporte técnico, lo que me da ojo para detectar problemas y resolverlos con calma. Nativo de Acapulco, Guerrero.",
+    "Enfocado en construir interfaces claras, rápidas y responsivas con React. Combino experiencia en desarrollo web con una base sólida en soporte técnico, lo que me da ojo para detectar problemas y resolverlos con calma. Nativo de Acapulco, Guerrero.",
   // 👇 Escribe aquí tu usuario de GitHub (sin espacios) para que la sección
   // "Proyectos" traiga tus repositorios reales automáticamente.
   // Ejemplo: "carlosdev8". Déjalo vacío ("") para mostrar el estado de ejemplo.
